@@ -3,9 +3,13 @@ import detailstyle from "@/styles/_detail.module.scss";
 
 import { DataContext } from "./MyContext";
 import axios from "axios";
-import { useRouter } from "next/router";
+import { Router, useRouter } from "next/router";
 
 const Detail = () => {
+  const REST_API_KEY = "0871b8de404d373dcd5244fcb8873bd5";
+  const REDIRECT_URI = "http://localhost:3000/oauth/loginok";
+  const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+
   const [dataDetail, setDataDetail] = useState(null);
   const [resComment, setResComment] = useState(null);
   const [dataComment, setDataComment] = useState(null);
@@ -68,9 +72,13 @@ const Detail = () => {
   function ocomment(item) {
     if (item.showid == dataDetail[0].mt20id) return true;
   }
+  // console.log(KAKAO_AUTH_URL);
 
   async function favorite() {
-    console.log(fav);
+    if (!localStorage.aaa) {
+      // console.log(localStorage.aaa);
+      window.location.href = KAKAO_AUTH_URL;
+    }
     if (!fav) {
       await axios.post("/api/hello?type=1234", {
         show1: dataDetail[0].mt20id[0],
