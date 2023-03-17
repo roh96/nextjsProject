@@ -5,7 +5,7 @@ import { DataContext } from "./MyContext";
 import axios from "axios";
 import { useRouter } from "next/router";
 
-const detail = () => {
+const Detail = () => {
   const [dataDetail, setDataDetail] = useState(null);
   const [resComment, setResComment] = useState(null);
   const [dataComment, setDataComment] = useState(null);
@@ -254,4 +254,4 @@ const detail = () => {
   );
 };
 
-export default detail;
+export default Detail;

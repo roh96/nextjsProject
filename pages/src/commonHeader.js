@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const CommonHeader = () => {
@@ -41,20 +42,20 @@ const CommonHeader = () => {
     <div>
       <header className={"headerstyle"}>
         <div>
-          <a href="/">
+          <Link href="/">
             <h1>
               쇼<span>링크</span>
             </h1>
-          </a>
+          </Link>
           <ul>
             {!user_id ? (
               <li>
-                <a href={KAKAO_AUTH_URL}>로그인</a>
+                <Link href={KAKAO_AUTH_URL}>로그인</Link>
               </li>
             ) : (
               <li>
-                <a href="/src/mypage">마이페이지</a>
-                <a href={KAKAO_LOGOUT_URL}>로그아웃</a>
+                <Link href="/src/mypage">마이페이지</Link>
+                <Link href={KAKAO_LOGOUT_URL}>로그아웃</Link>
               </li>
               // <li>
               //   <a>회원가입</a>
