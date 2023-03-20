@@ -10,6 +10,7 @@ const Detail = () => {
   const REDIRECT_URI =
     "https://port-0-nextjsproject-3a9t2ble82ehp6.sel3.cloudtype.app/oauth/loginok";
   // const REDIRECT_URI = "http://localhost:3000/oauth/loginok";
+
   const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
 
   const [dataDetail, setDataDetail] = useState(null);
@@ -31,7 +32,7 @@ const Detail = () => {
   };
   const [inputFavorite, setFavorite] = useState(inifav);
   const [inputValue, setValue] = useState(initial);
-
+  // ㅁㄴㅇㅊㅁㄴㅇ첨ㅇ니ㅓ
   function valueChange(e) {
     let t = e.target;
     setValue(() => {
@@ -48,8 +49,7 @@ const Detail = () => {
     console.log(inputValue);
     await axios.post("/api/hello", inputValue);
     setState(!state);
-    // dataFun("post", inputValue);
-    // window.location.replace("/src/detail");
+    e.target[0].value = "";
   }
 
   async function dataDelete(e) {
@@ -219,7 +219,7 @@ const Detail = () => {
         <div className={detailstyle.commenthead}>댓글</div>
         <div className={detailstyle.commentinputbox}>
           댓글을 남겨보세요
-          <form onSubmit={create}>
+          <form onSubmit={create} id="111222">
             <div className={detailstyle.commentinput}>
               <textarea
                 onChange={valueChange}
