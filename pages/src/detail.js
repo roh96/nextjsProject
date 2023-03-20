@@ -209,9 +209,9 @@ const Detail = () => {
           </div>
         </div>
       </div>
-      <div className={detailstyle.buttonbox}>
+      {/* <div className={detailstyle.buttonbox}>
         <button name="댓글창 가기">댓글창 가기</button>
-      </div>
+      </div> */}
       <div className={detailstyle.bigposter}>
         <img src={dataDetail[0].styurls[0].styurl[0]}></img>
       </div>
