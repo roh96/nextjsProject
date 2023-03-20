@@ -204,7 +204,7 @@ const Detail = () => {
             <div className={detailstyle.timeinfo}>공연시간정보</div>
             <div className={detailstyle.timeinfobox}>
               <div>{dataDetail[0].dtguidance}</div>
-              <div>예매하기</div>
+              {/* <div>예매하기</div> */}
             </div>
           </div>
         </div>
