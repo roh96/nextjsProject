@@ -37,3 +37,6 @@
 |<img width="100%" src="https://user-images.githubusercontent.com/74894952/233289435-09e11233-1c76-4b38-84aa-3263fb547778.gif"/>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 
 ### 🤔 느낀 점
+- 처음으로 데이터베이스를 통한 CRUD가 가능한 사이트를 만들면서 페이지 이동 시에 어떤 값을 넘겨줘야하는지 전체적인 구조에 대해 생각해 볼 수 있는 시간이었습니다.
+- react프로젝트 때보다 더 좋은 api를 찾았지만 xml 방식으로 밖에 주지 않아 문제가 있었지만, json방식으로 변환하는 방법을 찾아 해결하여 원하는 바를 이룰 수 있었습니다.
+- 전체적으로 react때보다 다양한 경험과 나은 결과물이 나아 만족스러운 시간이었습니다.
