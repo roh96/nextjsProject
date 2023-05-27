@@ -10,6 +10,10 @@ import MyContext from "./src/MyContext";
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <meta
+        http-equiv="Content-Security-Policy"
+        content="upgrade-insecure-requests"
+      ></meta>
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+
