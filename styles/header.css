@@ -105,9 +105,10 @@ table {
   align-items: flex-end;
 }
 .headerstyle > div ul li a {
+  display: inline-block;
   font-family: "LINESeedKR-Bd", sans-serif;
   color: black;
 }
-.headerstyle > div ul li:last-child {
+.headerstyle > div ul li a:last-child {
   padding-left: 50px;
 }/*# sourceMappingURL=header.css.map */
